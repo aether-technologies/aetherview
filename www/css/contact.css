@@ -1,0 +1,407 @@
+
+/* Custom styles for the contact page */
+.subtitle {
+    color: var(--color-text-muted);
+    text-align: center;
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.contact-grid {
+    /* display: grid;
+    grid-template-columns: 3fr 1fr; */
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
+}
+
+.contact-form-panel {
+    max-width: 650px;
+    margin: auto;
+}
+
+.glass-panel {
+    background: var(--color-surface);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-lg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: var(--shadow-soft);
+    backdrop-filter: blur(var(--panel-blur));
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.glass-panel::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    z-index: 1;
+}
+
+.panel-title {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text);
+}
+
+.accent-icon {
+    margin-right: var(--spacing-sm);
+    font-size: 1.8rem;
+}
+
+.info-group {
+    margin-bottom: var(--spacing-lg);
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: var(--spacing-md);
+}
+
+.info-icon {
+    margin-right: var(--spacing-md);
+    color: var(--color-secondary);
+    background: rgba(0, 200, 83, 0.1);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 15px rgba(0, 200, 83, 0.2);
+}
+
+.info-content h3 {
+    margin-bottom: var(--spacing-xs);
+    font-size: 1.1rem;
+    color: var(--color-secondary-light);
+}
+
+.info-content p {
+    margin-bottom: 0;
+    color: var(--color-text-muted);
+}
+
+.contact-socials {
+    margin-bottom: var(--spacing-lg);
+}
+
+.contact-socials h3 {
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.1rem;
+}
+
+.social-buttons {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    transition: all var(--transition-medium);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social-button:hover {
+    transform: translateY(-3px);
+    background: var(--color-primary);
+    box-shadow: 0 5px 15px rgba(74, 20, 140, 0.3);
+}
+
+.office-hours h3 {
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.1rem;
+}
+
+.office-hours p {
+    margin-bottom: var(--spacing-xs);
+    color: var(--color-text-muted);
+}
+
+.form-intro {
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-text-muted);
+}
+
+.contact-form .form-group {
+    margin-bottom: var(--spacing-md);
+    position: relative;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    color: var(--color-secondary-light);
+    font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius-sm);
+    color: var(--color-text);
+    transition: all var(--transition-fast);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--color-secondary);
+    box-shadow: 0 0 10px rgba(0, 200, 83, 0.2);
+}
+
+.form-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    transition: width var(--transition-medium);
+}
+
+.contact-form input:focus ~ .form-border,
+.contact-form textarea:focus ~ .form-border {
+    width: 100%;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkbox-text {
+    margin-left: var(--spacing-xs);
+}
+
+.contact-form .btn-primary {
+    padding: var(--spacing-md) var(--spacing-lg);
+    font-size: 1rem;
+}
+
+/* FAQ Section Styling */
+.faq-section {
+    margin-top: var(--spacing-xl);
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+}
+
+.faq-item {
+    background: var(--color-surface);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-lg);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: var(--shadow-soft);
+    backdrop-filter: blur(var(--panel-blur));
+    transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+}
+
+.faq-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-strong);
+}
+
+.faq-item h3 {
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.2rem;
+}
+
+.faq-item p {
+    color: var(--color-text-muted);
+    margin-bottom: 0;
+}
+
+/* Form Feedback Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Form Status Styles */
+.form-status {
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    border-radius: var(--radius-sm);
+    font-weight: 500;
+    display: none;
+}
+
+.form-status.success {
+    background: rgba(0, 200, 83, 0.1);
+    color: var(--color-secondary-light);
+    border: 1px solid rgba(0, 200, 83, 0.2);
+}
+
+.form-status.error {
+    background: rgba(255, 50, 50, 0.1);
+    color: #ff6b6b;
+    border: 1px solid rgba(255, 50, 50, 0.2);
+}
+
+/* Thank You Message Styles */
+#contact-form-view,
+#thank-you-view {
+    transition: opacity 0.3s ease;
+}
+
+#contact-form-view {
+    opacity: 1;
+}
+
+#thank-you-view {
+    opacity: 0;
+    text-align: center;
+    padding: var(--spacing-md) 0;
+}
+
+.thank-you-content {
+    padding: var(--spacing-lg) 0;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.thank-you-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--spacing-lg) auto;
+    font-size: 2.5rem;
+    color: white;
+    box-shadow: 0 0 20px rgba(0, 200, 83, 0.3);
+    animation: pulseGlow 2s infinite alternate;
+}
+
+.thank-you-content h2 {
+    margin-bottom: var(--spacing-md);
+    color: var(--color-secondary-light);
+    font-size: 1.8rem;
+}
+
+.thank-you-content p {
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-text-muted);
+    font-size: 1.1rem;
+}
+
+.thank-you-actions {
+    margin-top: var(--spacing-xl);
+}
+
+.thank-you-actions .btn {
+    min-width: 180px;
+    font-size: 1.1rem;
+    padding: var(--spacing-md) var(--spacing-lg);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes pulseGlow {
+    from {
+        box-shadow: 0 0 15px rgba(0, 200, 83, 0.3);
+    }
+    to {
+        box-shadow: 0 0 25px rgba(0, 200, 83, 0.6), 0 0 40px rgba(0, 184, 212, 0.3);
+    }
+}
+
+/* Legacy Popup Styles - Can be removed if not needed */
+.thank-you-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 26, 46, 0.85);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.thank-you-popup.show {
+    display: flex;
+    opacity: 1;
+}
+
+.popup-content {
+    width: 450px;
+    max-width: 90%;
+    text-align: center;
+    padding: var(--spacing-xl);
+    position: relative;
+    animation: scaleIn 0.4s ease-out;
+    box-shadow: 0 0 30px rgba(0, 184, 212, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Animation for popup */
+@keyframes scaleIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 0; }
+    100% { background-position: 200% 0; }
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 5vh auto;
+    }
+}

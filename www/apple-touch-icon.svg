@@ -1,0 +1,18 @@
+<svg width="180" height="180" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+  <!-- Hexagonal network pattern - Apple Touch Icon -->
+  <rect width="180" height="180" fill="#1a1a2e" rx="40"/>
+  <defs>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00c853;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4a148c;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <polygon points="90,35 125,55 125,95 90,115 55,95 55,55" 
+           fill="none" stroke="url(#grad3)" stroke-width="6"/>
+  <polygon points="90,50 112,62 112,86 90,98 68,86 68,62" 
+           fill="#4a148c" stroke="#00b8d4" stroke-width="4" opacity="0.7"/>
+  <circle cx="90" cy="74" r="10" fill="#00c853"/>
+  <line x1="90" y1="74" x2="90" y2="35" stroke="#00b8d4" stroke-width="4" opacity="0.6"/>
+  <line x1="90" y1="74" x2="125" y2="55" stroke="#00b8d4" stroke-width="4" opacity="0.6"/>
+  <line x1="90" y1="74" x2="55" y2="55" stroke="#00b8d4" stroke-width="4" opacity="0.6"/>
+</svg>

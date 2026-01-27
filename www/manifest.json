@@ -1,0 +1,26 @@
+{
+  "name": "AetherView",
+  "short_name": "AetherView",
+  "description": "Exploring the metaverse through insights, news, and perspectives on Virtual Reality, Web3, and Blockchain technologies.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a1a2e",
+  "theme_color": "#1a1a2e",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-touch-icon.svg",
+      "sizes": "180x180",
+      "type": "image/svg+xml"
+    }
+  ],
+  "categories": ["technology", "news", "blog"],
+  "lang": "en-US",
+  "dir": "ltr"
+}

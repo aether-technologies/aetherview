@@ -1,0 +1,138 @@
+<body>
+<div id="home-content">
+<!-- Hero Section (copied from home.html) -->
+<section class="hero-section">
+    <div class="container">
+        <div class="hero-content">
+            <h2>Exploring the New Frontiers of Digital Reality</h2>
+            <p>Insights, news, and perspectives on the evolving metaverse landscape</p>
+        </div>
+    </div>
+</section>
+
+<!-- Articles Page Content -->
+<div class="container">
+
+    <div class="articles-search-section">
+        <div class="search-container">
+            <div class="articles-results">
+        
+                <div class="articles-grid">
+                    <!-- Articles will be dynamically loaded here -->
+                    <div class="loading-indicator">
+                        <div class="spinner"></div>
+                        <p>Loading articles...</p>
+                    </div>
+                </div>
+        
+                <div class="pagination">
+                    <a href="#" class="pagination-prev disabled">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                        Previous
+                    </a>
+                    <div class="pagination-numbers">
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <span>...</span>
+                        <a href="#">10</a>
+                    </div>
+                    <a href="#" class="pagination-next">
+                        Next
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </a>
+                </div>
+        
+                <div class="ad-slot ad-horizontal">
+                    <div class="ad-placeholder">Advertisement</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="filter-container">
+
+            <form class="search-form" action="#" method="get">
+                <div class="search-input-wrapper">
+                    <input type="text" placeholder="Search articles..." name="search" class="search-input">
+                    <button type="submit" class="search-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    </button>
+                </div>
+            </form>
+            
+            <div class="results-sort">
+                <label for="sort-select">Sort by:</label>
+                <select id="sort-select" class="sort-select">
+                    <option value="newest">Newest First</option>
+                    <option value="oldest">Oldest First</option>
+                    <option value="popular">Most Popular</option>
+                    <option value="trending">Trending</option>
+                </select>
+            </div>
+                
+
+            <div id="time-period" class="filter-section">
+                <h3>Time Period</h3>
+                <div id="time-period-filters" class="filter-options">
+                    <label class="filter-option">
+                        <input type="radio" name="time" value="all" checked>
+                        All Time
+                    </label>
+                    <label class="filter-option">
+                        <input type="radio" name="time" value="month">
+                        This Month
+                    </label>
+                    <label class="filter-option">
+                        <input type="radio" name="time" value="week">
+                        This Week
+                    </label>
+                    <label class="filter-option">
+                        <input type="radio" name="time" value="day">
+                        Today
+                    </label>
+                </div>
+            </div>
+
+            <div id="categories" class="filter-section">
+                <h3>Categories</h3>
+                <div id="category-filters" class="filter-options scrollable-filters">
+                    <label class="filter-option">
+                        <input type="checkbox" name="category" value="virtual-reality">
+                        Virtual Reality
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" name="category" value="web3">
+                        Web3
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" name="category" value="blockchain">
+                        Blockchain
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" name="category" value="metaverse-news">
+                        Metaverse News
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" name="category" value="future-tech">
+                        Future Tech
+                    </label>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-secondary filter-clear-btn">Clear All</button>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Live reload injection point -->
+<script>
+    // Set the page title
+    document.title = "AetherView - Articles";
+    
+    // Update active navigation
+    document.querySelectorAll('.main-nav a').forEach(link => link.classList.remove('active'));
+    var articleNav = document.querySelector('.main-nav a[href="articles.html"]');
+    if(articleNav && articleNav.classList) articleNav.classList.add('active');
+</script>
+</body>
+<!-- End of content -->

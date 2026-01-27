@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="200" height="60" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="60" fill="transparent"/>
+  <text x="0" y="40" font-family="Orbitron, sans-serif" font-size="30" font-weight="bold" fill="#00c853">Aether</text>
+  <text x="110" y="40" font-family="Orbitron, sans-serif" font-size="30" font-weight="bold" fill="#4a148c">View</text>
+  <line x1="0" y1="45" x2="200" y2="45" stroke="#00b8d4" stroke-width="2" stroke-dasharray="1,1"/>
+</svg>

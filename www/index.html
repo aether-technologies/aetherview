@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AetherView</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="favicon.svg">
+    <link rel="apple-touch-icon" href="apple-touch-icon.svg">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#1a1a2e">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="AetherView - Your gateway to the metaverse. Explore insights, news, and perspectives on Virtual Reality, Web3, Blockchain, and emerging technologies shaping the future of digital worlds.">
+    <meta name="keywords" content="metaverse, virtual reality, VR, Web3, blockchain, crypto, NFT, augmented reality, AR, mixed reality, XR, digital worlds, virtual worlds, decentralized, DeFi, gaming, technology">
+    <meta name="author" content="AetherView">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aetherview.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.aetherview.com/">
+    <meta property="og:title" content="AetherView - A Perspective from Beyond the Realms">
+    <meta property="og:description" content="Exploring the metaverse through insights, news, and perspectives on Virtual Reality, Web3, and Blockchain technologies.">
+    <meta property="og:image" content="https://www.aetherview.com/apple-touch-icon.svg">
+    <meta property="og:site_name" content="AetherView">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.aetherview.com/">
+    <meta name="twitter:title" content="AetherView - A Perspective from Beyond the Realms">
+    <meta name="twitter:description" content="Exploring the metaverse through insights, news, and perspectives on Virtual Reality, Web3, and Blockchain technologies.">
+    <meta name="twitter:image" content="https://www.aetherview.com/apple-touch-icon.svg">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "AetherView",
+      "alternateName": "AetherView Blog",
+      "url": "https://www.aetherview.com",
+      "description": "Exploring the metaverse through insights, news, and perspectives on Virtual Reality, Web3, and Blockchain technologies.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "AetherView",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.aetherview.com/apple-touch-icon.svg"
+        }
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.aetherview.com/#search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <!-- <link rel="stylesheet" href="css/config-features.css"> -->
+    <!-- The page-specific title will be set dynamically -->
+    <script>
+        // This helps prevent FOUC (Flash of Unstyled Content)
+        document.documentElement.className = 'js-loading';
+        window.addEventListener('DOMContentLoaded', function() {
+            document.documentElement.className = document.documentElement.className.replace('js-loading','');
+        });
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">AetherView</a></h1>
+                <p class="tagline">A Perspective from Beyond the Realms</p>
+            </div>
+            <div class="ad-banner">
+                <!-- Header Banner Ad Slot -->
+                <div class="ad-slot ad-banner-top">
+                    <div class="ad-placeholder">Advertisement Banner</div>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul>
+                    <li><a href="#home" class="active" data-page="home">Home</a></li>
+                    <li><a href="#about" data-page="about">About</a></li>
+                    <li><a href="#contact" data-page="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="site-content" id="site-content">
+        <!-- Content will be loaded dynamically here -->
+        <div class="loading-indicator">
+            <div class="spinner"></div>
+            <p>Loading content...</p>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid simplified">
+                <div class="footer-about">
+                    <h3>About AetherView</h3>
+                    <p>Exploring the metaverse through insights, news, and perspectives on Virtual Reality, Web3, and Blockchain technologies.</p>
+                    <div class="social-links">
+                        <!-- (BNS - 2025/08/22) Enable these when social media is implemented-->
+                        <!-- <a href="#" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                        </a> -->
+                        <!-- <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a> -->
+                        <!-- <a href="#" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a> -->
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home" data-page="home">Home</a></li>
+                        <li><a href="#about" data-page="about">About</a></li>
+                        <li><a href="#contact" data-page="contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Footer Ad Slot -->
+            <div class="ad-slot ad-footer">
+                <div class="ad-placeholder">Advertisement</div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 AetherView. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script src="js/router.js"></script>
+    <script src="js/articles.js"></script>
+</body>
+</html>

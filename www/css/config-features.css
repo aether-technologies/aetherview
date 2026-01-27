@@ -1,0 +1,86 @@
+/**
+ * AetherView - Config-driven Features CSS
+ * 
+ * CSS rules that respond to feature toggles in config.json
+ */
+
+/* Hide article images when disabled in config */
+html.hide-article-images .card-image,
+html.hide-article-images .article-image {
+  display: none;
+}
+
+/* Adjust card layout when images are disabled */
+html.hide-article-images .card {
+  display: flex;
+  flex-direction: column;
+}
+
+html.hide-article-images .article-card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make card content take full width when images are hidden */
+html.hide-article-images .card-content {
+  width: 100%;
+  padding: 1.5rem;
+}
+
+/* Hide advertisements when disabled in config */
+html.hide-advertisements .ad-slot,
+html.hide-advertisements .ad-banner,
+html.hide-advertisements .ad-placeholder {
+  display: none;
+}
+
+/* Preserve the content grid with sidebar when only ads are hidden */
+html.hide-advertisements:not(.hide-article-images) .content-grid {
+  /* Keep the original grid layout */
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+/* Adjust layout when both ads and images are hidden */
+html.hide-advertisements.hide-article-images .content-grid {
+  display: block;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Keep header layout intact */
+html.hide-advertisements .site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Ensure that the sidebar still exists when ads are hidden */
+html.hide-advertisements .sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Ensure the loading indicators display correctly */
+.loading-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+/* Ensure featured content section displays properly */
+html.hide-article-images #featured .card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+/* Fix any spacing issues */
+html.hide-advertisements .ad-section {
+  display: none;
+}

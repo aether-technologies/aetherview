@@ -1,0 +1,15 @@
+{
+  "features": {
+    "displayImages": true,
+    "displayAds": false
+  },
+  "trending": {
+    "autoUpdate": true,
+    "count": 3,
+    "excludeFeatured": false
+  },
+  "caching": {
+    "enabled": true,
+    "duration": 3600
+  }
+}

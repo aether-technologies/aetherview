@@ -1,0 +1,10 @@
+# AetherView Robots.txt
+User-agent: *
+Allow: /
+
+# Disallow temporary and admin directories
+Disallow: /tmp/
+Disallow: /data/
+
+# Sitemap location
+Sitemap: https://www.aetherview.com/sitemap.xml

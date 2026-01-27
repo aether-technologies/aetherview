@@ -1,0 +1,254 @@
+[
+  {
+    "title": "AI Social Intelligence: How GPT-5's Deception Skills in \"Among Us\" Signal the Future of Metaverse NPCs",
+    "filename": "ai-social-intelligence-metaverse-npcs.html",
+    "date": "2025-09-24",
+    "author": "Aethio",
+    "authorTitle": "AI & Metaverse Analyst",
+    "category": "Artificial Intelligence",
+    "excerpt": "Examining how AI's social intelligence capabilities demonstrated in gaming environments forecast a revolution in metaverse NPC development and virtual world interactions.",
+    "topics": [
+      "Artificial Intelligence",
+      "Metaverse",
+      "NPCs",
+      "Social Intelligence",
+      "Virtual Worlds"
+    ],
+    "readTime": 12,
+    "featured": true,
+    "trending": true,
+    "imageUrl": "images/placeholders/featured-post.svg",
+    "thumbnailUrl": "images/placeholders/recent-post.svg"
+  },
+  {
+    "title": "Beyond Entertainment: Apple Vision Pro's New Immersive Films Redefine Metaverse Media Consumption",
+    "filename": "apple-vision-pro-immersive-films.html",
+    "date": "2025-09-24",
+    "author": "Aethio",
+    "authorTitle": "Metaverse Technology Analyst",
+    "category": "Metaverse",
+    "excerpt": "How Apple's Vision Pro immersive film experiences are transforming media consumption and bridging the gap to the metaverse.",
+    "topics": [
+      "Metaverse",
+      "Virtual Reality",
+      "Apple",
+      "Vision Pro",
+      "Immersive Media"
+    ],
+    "readTime": 10,
+    "featured": false,
+    "trending": true,
+    "imageUrl": "images/placeholders/featured-post.svg",
+    "thumbnailUrl": "images/placeholders/recent-post.svg"
+  },
+  {
+    "title": "The Evolution of Metaverse Platforms in 2025",
+    "filename": "metaverse-evolution.html",
+    "date": "2025-08-21",
+    "author": "Alex Morgan",
+    "authorTitle": "Metaverse Analyst & Tech Futurist",
+    "category": "Metaverse",
+    "excerpt": "How virtual worlds are transforming and converging to create seamless digital experiences across platforms.",
+    "topics": [
+      "Metaverse",
+      "Virtual Reality",
+      "Digital Economy",
+      "Web3",
+      "Future Tech"
+    ],
+    "readTime": 12,
+    "featured": true,
+    "trending": false,
+    "imageUrl": "images/placeholders/featured-post.svg",
+    "thumbnailUrl": "images/placeholders/recent-post.svg"
+  },
+  {
+    "title": "Blockchain Gaming: The Next Generation of Play-to-Earn",
+    "filename": "blockchain-gaming-play-to-earn.html",
+    "date": "2025-09-20",
+    "author": "Jordan Lee",
+    "authorTitle": "Blockchain Gaming Expert",
+    "category": "Blockchain",
+    "excerpt": "Exploring the evolution of play-to-earn gaming models and their impact on the gaming industry.",
+    "topics": [
+      "Blockchain",
+      "Gaming",
+      "NFTs",
+      "Cryptocurrency",
+      "Web3"
+    ],
+    "readTime": 8,
+    "featured": false,
+    "trending": true,
+    "imageUrl": "images/placeholders/featured-post.svg",
+    "thumbnailUrl": "images/placeholders/recent-post.svg"
+  },
+  {
+    "title": "Decentralized Identity in the Metaverse",
+    "filename": "decentralized-identity-metaverse.html",
+    "date": "2025-09-18",
+    "author": "Sam Rivera",
+    "authorTitle": "Web3 Identity Specialist",
+    "category": "Web3",
+    "excerpt": "How decentralized identity systems are shaping the future of user authentication and privacy in virtual worlds.",
+    "topics": [
+      "Web3",
+      "Identity",
+      "Privacy",
+      "Blockchain",
+      "Metaverse"
+    ],
+    "readTime": 10,
+    "featured": false,
+    "trending": false,
+    "imageUrl": "images/placeholders/featured-post.svg",
+    "thumbnailUrl": "images/placeholders/recent-post.svg"
+  },
+  {
+    "title": "VR Fitness Revolution: Working Out in Virtual Reality",
+    "filename": "vr-fitness-revolution.html",
+    "date": "2025-09-15",
+    "author": "Taylor Chen",
+    "authorTitle": "VR Health & Wellness Analyst",
+    "category": "Virtual Reality",
+    "excerpt": "Virtual reality is transforming how we approach fitness, making workouts more engaging and effective.",
+    "topics": [
+      "Virtual Reality",
+      "Fitness",
+      "Health",
+      "VR Apps",
+      "Wellness"
+    ],
+    "readTime": 7,
+    "featured": false,
+    "trending": true,
+    "imageUrl": "images/placeholders/featured-post.svg",
+    "thumbnailUrl": "images/placeholders/recent-post.svg"
+  },
+  {
+    "title": "Smart Contracts: Automating the Metaverse Economy",
+    "filename": "smart-contracts-metaverse-economy.html",
+    "date": "2025-09-12",
+    "author": "Casey Martinez",
+    "authorTitle": "Blockchain Developer",
+    "category": "Blockchain",
+    "excerpt": "Understanding how smart contracts enable trustless transactions and automated systems in virtual economies.",
+    "topics": [
+      "Blockchain",
+      "Smart Contracts",
+      "Web3",
+      "Digital Economy",
+      "Metaverse"
+    ],
+    "readTime": 11,
+    "featured": false,
+    "trending": false,
+    "imageUrl": "images/placeholders/featured-post.svg",
+    "thumbnailUrl": "images/placeholders/recent-post.svg"
+  },
+  {
+    "title": "The Rise of Virtual Real Estate Investment",
+    "filename": "virtual-real-estate-investment.html",
+    "date": "2025-09-10",
+    "author": "Morgan Blake",
+    "authorTitle": "Digital Assets Analyst",
+    "category": "Metaverse",
+    "excerpt": "Virtual land ownership is becoming a serious investment opportunity as metaverse platforms mature.",
+    "topics": [
+      "Metaverse",
+      "Real Estate",
+      "NFTs",
+      "Investment",
+      "Virtual Worlds"
+    ],
+    "readTime": 9,
+    "featured": false,
+    "trending": false,
+    "imageUrl": "images/placeholders/featured-post.svg",
+    "thumbnailUrl": "images/placeholders/recent-post.svg"
+  },
+  {
+    "title": "AR Shopping: The Future of Retail Experience",
+    "filename": "ar-shopping-future-retail.html",
+    "date": "2025-09-08",
+    "author": "Riley Park",
+    "authorTitle": "AR Commerce Specialist",
+    "category": "Augmented Reality",
+    "excerpt": "Augmented reality is revolutionizing the shopping experience, blending physical and digital retail.",
+    "topics": [
+      "Augmented Reality",
+      "E-commerce",
+      "Retail",
+      "Shopping",
+      "AR Apps"
+    ],
+    "readTime": 8,
+    "featured": false,
+    "trending": false,
+    "imageUrl": "images/placeholders/featured-post.svg",
+    "thumbnailUrl": "images/placeholders/recent-post.svg"
+  },
+  {
+    "title": "DAO Governance: Community-Led Virtual Worlds",
+    "filename": "dao-governance-virtual-worlds.html",
+    "date": "2025-09-05",
+    "author": "Alex Morgan",
+    "authorTitle": "Web3 Governance Expert",
+    "category": "Web3",
+    "excerpt": "Decentralized Autonomous Organizations are enabling true community ownership and governance in metaverse platforms.",
+    "topics": [
+      "Web3",
+      "DAO",
+      "Governance",
+      "Blockchain",
+      "Metaverse"
+    ],
+    "readTime": 10,
+    "featured": false,
+    "trending": false,
+    "imageUrl": "images/placeholders/featured-post.svg",
+    "thumbnailUrl": "images/placeholders/recent-post.svg"
+  },
+  {
+    "title": "Neural Interfaces: The Next Frontier in VR",
+    "filename": "neural-interfaces-vr-frontier.html",
+    "date": "2025-09-02",
+    "author": "Jordan Lee",
+    "authorTitle": "Neurotechnology Researcher",
+    "category": "Future Tech",
+    "excerpt": "Brain-computer interfaces are poised to revolutionize how we interact with virtual reality environments.",
+    "topics": [
+      "Virtual Reality",
+      "Neurotechnology",
+      "Future Tech",
+      "BCI",
+      "Innovation"
+    ],
+    "readTime": 13,
+    "featured": false,
+    "trending": false,
+    "imageUrl": "images/placeholders/featured-post.svg",
+    "thumbnailUrl": "images/placeholders/recent-post.svg"
+  },
+  {
+    "title": "Metaverse Education: Learning in Virtual Classrooms",
+    "filename": "metaverse-education-virtual-classrooms.html",
+    "date": "2025-08-30",
+    "author": "Taylor Chen",
+    "authorTitle": "EdTech Specialist",
+    "category": "Metaverse",
+    "excerpt": "Virtual reality is transforming education, creating immersive learning experiences that transcend physical boundaries.",
+    "topics": [
+      "Metaverse",
+      "Education",
+      "Virtual Reality",
+      "EdTech",
+      "Learning"
+    ],
+    "readTime": 9,
+    "featured": false,
+    "trending": false,
+    "imageUrl": "images/placeholders/featured-post.svg",
+    "thumbnailUrl": "images/placeholders/recent-post.svg"
+  }
+]
