@@ -1079,6 +1079,7 @@ button, .btn {
 }
 
 .article-image {
+    display: none; /* hide image until we actually have one */
     position: relative;
     overflow: hidden;
     height: 200px;

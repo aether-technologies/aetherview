@@ -9,6 +9,7 @@ let currentArticlePage = 1;
 let articlesPerPage = 6;
 let currentFilteredArticles = [];
 const article_logging = false;
+const excerptMaxLength = 400;
 
 /**
  * Initialize the articles module
@@ -721,7 +722,7 @@ function createArticleListItem(article) {
                 <span class="article-date">${displayDate}</span>
                 <span class="article-read-time">${article.readTime} min read</span>
             </div>
-            <p class="article-excerpt">${article.excerpt}</p>
+            <p class="article-excerpt">${article.excerpt.length > excerptMaxLength ? article.excerpt.substring(0, excerptMaxLength) + '...' : article.excerpt}</p>
             <div class="article-tags">
                 ${article.topics.map(topic => `<a href="#" class="article-tag">${topic}</a>`).join('')}
             </div>
