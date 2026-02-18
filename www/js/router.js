@@ -196,8 +196,14 @@ function loadContent(page, updateHistory = true) {
             scripts.forEach((script, index) => {
                 if (router_logging) console.log('Processing script', index + 1);
                 
-                // Check if this is an external script
-                const src = script.getAttribute('src');
+                // Check if this is an external script with a valid src
+                let src = script.getAttribute('src');
+                
+                // Skip invalid src values
+                if (src === 'undefined' || !src) {
+                    if (router_logging) console.log('Script', index + 1, 'has invalid src, skipping');
+                    src = null;
+                }
                 
                 // If external script already loaded, skip it
                 if (src && loadedScripts.has(src)) {
@@ -210,14 +216,19 @@ function loadContent(page, updateHistory = true) {
                 
                 // Copy all attributes
                 Array.from(script.attributes).forEach(attr => {
-                    newScript.setAttribute(attr.name, attr.value);
+                    // Ensure src attribute is not undefined or empty
+                    if (attr.name === 'src' && (!attr.value || attr.value === 'undefined')) {
+                        console.warn('Skipping invalid script source:', attr.value);
+                    } else {
+                        newScript.setAttribute(attr.name, attr.value);
+                    }
                 });
                 
                 // Copy the content
                 newScript.textContent = script.textContent;
                 
                 // Track external scripts
-                if (src) {
+                if (src && src !== 'undefined') {
                     loadedScripts.add(src);
                     if (router_logging) console.log('Tracking external script:', src);
                 }

@@ -1,8 +1,12 @@
 // Contact form handler with EmailJS integration
 class ContactManager {
     setupContactForm() {
-        // Initialize EmailJS
-        emailjs.init('wPBi4S697eYBS1zNh'); // EmailJS public key
+        // Initialize EmailJS if available
+        if (typeof emailjs !== 'undefined') {
+            emailjs.init('wPBi4S697eYBS1zNh'); // EmailJS public key
+        } else {
+            console.error('EmailJS library not loaded!');
+        }
 
         // Find the contact form
         const contactForm = document.querySelector('.contact-form');
@@ -50,8 +54,9 @@ class ContactManager {
                     message: messageField.value
                 };
                 
-                // Send email using EmailJS
-                emailjs.send('service_tp5cydz', 'template_btg45ki', formData)
+                // Send email using EmailJS if available
+                if (typeof emailjs !== 'undefined') {
+                    emailjs.send('service_tp5cydz', 'template_btg45ki', formData)
                     .then(() => {                        
                         // Scroll to the form status message
                         formStatus.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -85,6 +90,17 @@ class ContactManager {
                         submitButton.textContent = originalButtonText;
                         submitButton.disabled = false;
                     });
+                } else {
+                    // Handle case where EmailJS is not available
+                    console.error('EmailJS not available, cannot send email');
+                    formStatus.textContent = 'Email service not available. Please contact us through alternative means.';
+                    formStatus.className = 'form-status error';
+                    formStatus.style.display = 'block';
+                    
+                    // Reset button
+                    submitButton.textContent = originalButtonText;
+                    submitButton.disabled = false;
+                }
             });
         }
     }

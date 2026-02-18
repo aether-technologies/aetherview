@@ -9,6 +9,7 @@ let currentArticlePage = 1;
 let articlesPerPage = 6;
 let currentFilteredArticles = [];
 const article_logging = false;
+const excerptMaxLength = 400;
 
 /**
  * Initialize the articles module
@@ -169,9 +170,12 @@ function initPopularArticles() {
         // Create article elements
         trendingArticles.forEach(article => {
             const li = document.createElement('li');
+            // Default thumbnail image for articles without one
+            const thumbnailUrl = article.thumbnailUrl || 'images/placeholders/article-thumb.svg';
+            
             li.innerHTML = `
-                <a href="articles/${article.filename}">
-                    <img src="${article.thumbnailUrl}" alt="${article.title}">
+                <a href="narticles/${article.filename.endsWith('.html') ? article.filename : article.filename + '.html'}">
+                    <img src="${thumbnailUrl}" alt="${article.title}">
                     <div>
                         <h4>${article.title}</h4>
                     </div>
@@ -678,21 +682,24 @@ function createArticleCard(article, className = '') {
     // Format date for display
     const displayDate = formatDate(article.date);
     
+    // Default image for articles without one
+    const imageUrl = article.imageUrl || 'images/placeholders/article.svg';
+    
     articleElement.innerHTML = `
         <div class="card-image">
-            <a href="articles/${article.filename}">
-                <img src="${article.imageUrl}" alt="${article.title}">
+            <a href="narticles/${article.filename.endsWith('.html') ? article.filename : article.filename + '.html'}">
+                <img src="${imageUrl}" alt="${article.title}">
             </a>
         </div>
         <div class="card-content">
             <div class="card-meta">
                 <span class="category">${article.category}</span>
                 <span class="date">${displayDate}</span>
-                ${className !== 'compact' ? `<span class="read-time">${article.readTime} min read</span>` : ''}
+                ${(className !== 'compact' && article.readTime) ? `<span class="read-time">${article.readTime} min read</span>` : ''}
             </div>
-            <h3 class="card-title"><a href="articles/${article.filename}">${article.title}</a></h3>
+            <h3 class="card-title"><a href="narticles/${article.filename.endsWith('.html') ? article.filename : article.filename + '.html'}">${article.title}</a></h3>
             ${className !== 'compact' ? `<p class="card-excerpt">${article.excerpt}</p>` : ''}
-            ${className !== 'compact' ? `<a href="articles/${article.filename}" class="read-more">Continue Reading</a>` : ''}
+            ${className !== 'compact' ? `<a href="narticles/${article.filename.endsWith('.html') ? article.filename : article.filename + '.html'}" class="read-more">Continue Reading</a>` : ''}
         </div>
     `;
     
@@ -711,17 +718,20 @@ function createArticleListItem(article) {
     // Format date for display
     const displayDate = formatDate(article.date);
     
+    // Default image for articles without one
+    const imageUrl = article.imageUrl || 'images/placeholders/article.svg';
+    
     articleElement.innerHTML = `
         <div class="article-image">
-            <img src="${article.imageUrl}" alt="${article.title}">
+            <img src="${imageUrl}" alt="${article.title}">
         </div>
         <div class="article-content">
-            <h3><a href="articles/${article.filename}">${article.title}</a></h3>
+            <h3><a href="narticles/${article.filename.endsWith('.html') ? article.filename : article.filename + '.html'}">${article.title}</a></h3>
             <div class="article-meta">
                 <span class="article-date">${displayDate}</span>
-                <span class="article-read-time">${article.readTime} min read</span>
+                ${article.readTime ? `<span class="article-read-time">${article.readTime} min read</span>` : ''}
             </div>
-            <p class="article-excerpt">${article.excerpt}</p>
+            <p class="article-excerpt">${article.excerpt.length > excerptMaxLength ? article.excerpt.substring(0, excerptMaxLength) + '...' : article.excerpt}</p>
             <div class="article-tags">
                 ${article.topics.map(topic => `<a href="#" class="article-tag">${topic}</a>`).join('')}
             </div>

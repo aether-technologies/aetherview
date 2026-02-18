@@ -85,9 +85,12 @@
     // Set the page title
     document.title = "AetherView - Contact";
     
-    // Update active navigation
+    // Update active navigation - with safety check
     document.querySelectorAll('.main-nav a').forEach(link => link.classList.remove('active'));
-    document.querySelector('.main-nav a[href="contact.html"]').classList.add('active');
+    const contactLink = document.querySelector('.main-nav a[href="contact.html"]') || document.querySelector('.main-nav a[href="#contact"]') || document.querySelector('.main-nav a[data-page="contact"]');
+    if (contactLink) {
+        contactLink.classList.add('active');
+    }
 </script>
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script src="js/contact.js"></script>
