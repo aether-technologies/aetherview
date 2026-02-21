@@ -174,7 +174,7 @@ function initPopularArticles() {
             const thumbnailUrl = article.thumbnailUrl || 'images/placeholders/article-thumb.svg';
             
             li.innerHTML = `
-                <a href="narticles/${article.filename.endsWith('.html') ? article.filename : article.filename + '.html'}">
+                <a href="articles/${article.filename.endsWith('.html') ? article.filename : article.filename + '.html'}">
                     <img src="${thumbnailUrl}" alt="${article.title}">
                     <div>
                         <h4>${article.title}</h4>
@@ -687,7 +687,7 @@ function createArticleCard(article, className = '') {
     
     articleElement.innerHTML = `
         <div class="card-image">
-            <a href="narticles/${article.filename.endsWith('.html') ? article.filename : article.filename + '.html'}">
+            <a href="articles/${article.filename.endsWith('.html') ? article.filename : article.filename + '.html'}">
                 <img src="${imageUrl}" alt="${article.title}">
             </a>
         </div>
@@ -697,9 +697,9 @@ function createArticleCard(article, className = '') {
                 <span class="date">${displayDate}</span>
                 ${(className !== 'compact' && article.readTime) ? `<span class="read-time">${article.readTime} min read</span>` : ''}
             </div>
-            <h3 class="card-title"><a href="narticles/${article.filename.endsWith('.html') ? article.filename : article.filename + '.html'}">${article.title}</a></h3>
+            <h3 class="card-title"><a href="articles/${article.filename.endsWith('.html') ? article.filename : article.filename + '.html'}">${article.title}</a></h3>
             ${className !== 'compact' ? `<p class="card-excerpt">${article.excerpt}</p>` : ''}
-            ${className !== 'compact' ? `<a href="narticles/${article.filename.endsWith('.html') ? article.filename : article.filename + '.html'}" class="read-more">Continue Reading</a>` : ''}
+            ${className !== 'compact' ? `<a href="articles/${article.filename.endsWith('.html') ? article.filename : article.filename + '.html'}" class="read-more">Continue Reading</a>` : ''}
         </div>
     `;
     
@@ -726,7 +726,7 @@ function createArticleListItem(article) {
             <img src="${imageUrl}" alt="${article.title}">
         </div>
         <div class="article-content">
-            <h3><a href="narticles/${article.filename.endsWith('.html') ? article.filename : article.filename + '.html'}">${article.title}</a></h3>
+            <h3><a href="articles/${article.filename.endsWith('.html') ? article.filename : article.filename + '.html'}">${article.title}</a></h3>
             <div class="article-meta">
                 <span class="article-date">${displayDate}</span>
                 ${article.readTime ? `<span class="article-read-time">${article.readTime} min read</span>` : ''}
